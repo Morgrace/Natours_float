@@ -1,0 +1,123 @@
+.section-about {
+    background-color: $color-grey-light-1;
+    padding: 25rem 0;
+    margin-top: -20vh;
+
+    @include respond(tab-port) {
+        padding: 22rem 0;
+    }
+}
+
+
+.section-features {
+    background-image: linear-gradient(to left top,
+            rgba($color-primary-dark, 0.8),
+            rgba($color-primary-light, 0.8)),
+        url("../img/nat-4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20rem 0;
+    transform: skewY(-7deg);
+    margin-top: -11rem;
+
+    &>* {
+        transform: skewY(7deg);
+    }
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+}
+
+.section-tours {
+    background-color: $color-grey-light-1;
+    padding: 25rem 0 15rem 0;
+    margin-top: -11rem;
+
+    @include respond(tab-port) {
+        padding: 20rem 0 10rem 0;
+    }
+}
+
+.section-stories {
+    padding: 15rem 0;
+    position: relative;
+
+}
+
+.section-booking {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+}
+
+.booking {
+    background-image: linear-gradient(105deg, rgba($color-white, .9) 50%, transparent 50%), url(../img/nat-10.jpg);
+    background-size: 100%;
+
+    @include respond(tab-port) {
+        background-image: linear-gradient(to right, rgba($color-white, .9) 100%, transparent 0%), url(../img/nat-10.jpg);
+        background-size: cover;
+    }
+}
+
+.footer {
+    padding: 10rem 0;
+    background-color: $color-gray-dark-3;
+    font-size: 1.4rem;
+    color: $color-grey-light-1;
+
+    &__logo {
+        width: 15rem;
+        height: auto;
+    }
+
+    &__navigation {
+        display: inline-block;
+        border-top: 1px solid rgba($color-grey-light-1, .4);
+        padding-top: 2rem;
+
+        @include respond(tab-port) {
+            width: 100%;
+            text-align: center;
+        }
+
+    }
+
+    &__navigation-list {
+        display: inline-block;
+        text-transform: uppercase;
+        color: $color-grey-light-1;
+
+    }
+
+    &__navigation-list:not(:last-child) {
+        margin-right: 1.5rem;
+    }
+
+    &__link:link,
+    &__link:visited {
+        color: $color-grey-light-1;
+        display: inline-block;
+        transition: all .3s;
+        text-transform: uppercase;
+        background-color: $color-gray-dark-3;
+    }
+
+    &__link:hover {
+        transform: scale(1.3) rotate(5deg);
+        color: $color-primary-dark;
+        box-shadow: 0 1rem 2rem rgba($color-black, .4);
+    }
+
+    &__copyright {
+        border-top: 1px solid rgba($color-grey-light-1, .4);
+        padding-top: 2rem;
+        width: 80%;
+        float: right;
+
+        @include respond(tab-port) {
+            float: none;
+            width: 100%;
+        }
+    }
+}
