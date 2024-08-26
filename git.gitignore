@@ -1,8 +1,8 @@
 # Ignore node_modules directory (dependencies)
-node_modules/
+node_modules
 
 # Ignore Sass cache files
-.sass-cache/
+.sass-cache
 
 # Ignore compiled CSS files if you want to exclude them from version control
 css/style.prefix.css
@@ -11,8 +11,8 @@ css/style.prefix.css
 *.log
 
 # Ignore build files and directories
-dist/
-build/
+dist
+build
 
 # Ignore environment variables
 .env
@@ -22,8 +22,8 @@ build/
 Thumbs.db  # Windows
 
 # Ignore IDE and editor files
-.vscode/
-.idea/
+.vscode
+.idea
 *.sublime-project
 *.sublime-workspace
 *.code-workspace
